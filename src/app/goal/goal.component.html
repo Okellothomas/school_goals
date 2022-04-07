@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="footer">
+        <ul>
+            <li *ngFor='let goal of goals'>
+              {{goal.id}} -> {{goal.name}}
+              <app-goal-detail-component [goal]="goal"></app-goal-detail-component>
+            </li>
+         </ul> 
+        <p *ngIf='goals.length> 5'>Your goals are too many</p>
+    </div>
+</div>

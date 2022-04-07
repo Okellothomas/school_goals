@@ -1,0 +1,15 @@
+
+<!-- In order to see them in action you have to run one at a time while keeping the other one commented. -->
+<p>
+    <!-- {{goal.description}} -->
+    <!-- <button (click)="goalComplete(true)">Complete</button> -->
+</p>
+
+<h3>
+    {{school.description}}  
+    <button (click)="schoolComplete(true)">Complete</button> 
+    
+    <p>This goal will be complete in {{school.completeDate|dateCount}} days</p>
+
+    <button (click)="schoolDelete(true)">Delete Goal</button>
+</h3>
